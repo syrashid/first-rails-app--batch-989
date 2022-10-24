@@ -1,4 +1,17 @@
 <h1>🚀 Our awesome About Page 🚀</h1>
+
+<h2>Meet our team</h2>
+<form action="/about" method="get">
+  <input type="text" name="member" placeholder="Who are you looking for?" value="<%= params[:member]%>">
+  <input type="submit">
+</form>
+
+<ol>
+  <% @members.each do |member| %>
+    <li><%= member.capitalize %></li>
+  <% end %>
+</ol>
+
 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos quam reprehenderit quis velit, veniam odio tempore laudantium atque est quod dolores neque eum dolorum? Repellendus earum porro beatae alias enim.
 Eligendi voluptates maxime blanditiis! Illo, itaque soluta earum eveniet minima facere dolore hic vitae neque. Error eum harum quibusdam soluta, voluptate repudiandae aperiam ratione quisquam ea ad totam voluptatibus sint?
 Iure est facilis amet eaque voluptate architecto voluptatibus aliquam ex reiciendis. Dolores pariatur exercitationem voluptatibus molestias sint corrupti nemo eaque harum, architecto qui quaerat cupiditate id non adipisci fuga obcaecati!

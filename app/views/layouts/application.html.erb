@@ -11,6 +11,16 @@
   </head>
 
   <body>
+    <div style="background: steelblue; color: white; padding: 12px 24px;">
+      <h3>navbar</h3>
+      <% time = Time.now + 3.days %>
+      <p>The time is currently <%= time %></p>
+      <div>
+        <%= link_to '🏠', root_path %>
+        <%= link_to 'About', about_path %>
+        <%= link_to 'Contact', contact_path %>
+      </div>
+    </div>
     <%= yield %>
   </body>
 </html>
